@@ -21,3 +21,4 @@ A 6-week, hands-on ServiceNow + agentic AI learning portfolio, built while prepa
 ## Progress
 
 - [x] Week 1, Day 1: platform foundations, Lumen Pharma org set up
+- [x] Week 1, Day 2: tables & fields deep dive, MediCare HMS scoped app (7 tables, CMDB extension)
