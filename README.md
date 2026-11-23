@@ -9,6 +9,7 @@ A 6-week, hands-on ServiceNow + agentic AI learning portfolio, built while prepa
 | Folder | Contents |
 | --- | --- |
 | `daily-log/` | One note per study day: what I built, what broke, what I learned |
+| `cheatsheets/` | Quick references: [applications & modules](cheatsheets/applications-and-modules.md), [scripting](cheatsheets/scripting.md) |
 | `projects/` | Portfolio projects (update sets, scripts, READMEs, demos) |
 | `data/` | Simulated datasets (CSV) |
 
