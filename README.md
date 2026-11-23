@@ -9,6 +9,7 @@ A 6-week, hands-on ServiceNow + agentic AI learning portfolio, built while prepa
 | Folder | Contents |
 | --- | --- |
 | `daily-log/` | One note per study day: what I built, what broke, what I learned |
+| `cheatsheets/` | Quick references: [applications & modules](cheatsheets/applications-and-modules.md), [scripting](cheatsheets/scripting.md) |
 | `projects/` | Portfolio projects (update sets, scripts, READMEs, demos) |
 | `data/` | Simulated datasets (CSV) |
 
@@ -25,3 +26,4 @@ A 6-week, hands-on ServiceNow + agentic AI learning portfolio, built while prepa
 - [x] Week 1, Day 3: forms, views, UI policies vs data policies (bypass test), dot-walked list filters
 - [x] Week 1, Day 4: roles, groups, ACLs (table, field, condition-based); impersonation test matrix 36/36
 - [x] Week 1, Day 5: import sets & transform maps (coalesce, choice actions, messy data), update set hygiene, Instance Scan
+- [x] Week 2, Day 1: GlideRecord & business rules (age, allergy block, ward bed counts, discharge, full-ward block)
