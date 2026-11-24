@@ -21,10 +21,10 @@ A 6-week, hands-on ServiceNow + agentic AI learning portfolio, built while prepa
 
 ## Progress
 
-- [x] Week 1, Day 1: platform foundations, Lumen Pharma org set up
-- [x] Week 1, Day 2: tables & fields deep dive, MediCare HMS scoped app (7 tables, CMDB extension)
-- [x] Week 1, Day 3: forms, views, UI policies vs data policies (bypass test), dot-walked list filters
-- [x] Week 1, Day 4: roles, groups, ACLs (table, field, condition-based); impersonation test matrix 36/36
-- [x] Week 1, Day 5: import sets & transform maps (coalesce, choice actions, messy data), update set hygiene, Instance Scan
-- [x] Week 2, Day 1: GlideRecord & business rules (age, allergy block, ward bed counts, discharge, full-ward block)
-- [x] Week 2, Day 2: script includes (PatientUtils, PrescriptionUtils, WardUtils), refactor + regression test, read-only health check
+- [x] [Week 1, Day 1](daily-log/week1-day1.md): platform foundations, Lumen Pharma org set up
+- [x] [Week 1, Day 2](daily-log/week1-day2.md): tables & fields deep dive, MediCare HMS scoped app (7 tables, CMDB extension)
+- [x] [Week 1, Day 3](daily-log/week1-day3.md): forms, views, UI policies vs data policies (bypass test), dot-walked list filters
+- [x] [Week 1, Day 4](daily-log/week1-day4.md): roles, groups, ACLs (table, field, condition-based); impersonation test matrix 36/36
+- [x] [Week 1, Day 5](daily-log/week1-day5.md): import sets & transform maps (coalesce, choice actions, messy data), update set hygiene, Instance Scan
+- [x] [Week 2, Day 1](daily-log/week2-day1.md): GlideRecord & business rules (age, allergy block, ward bed counts, discharge, full-ward block)
+- [x] [Week 2, Day 2](daily-log/week2-day2.md): script includes (PatientUtils, PrescriptionUtils, WardUtils), refactor + regression test, read-only health check
