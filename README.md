@@ -10,6 +10,7 @@ A 6-week, hands-on ServiceNow + agentic AI learning portfolio, built while prepa
 | --- | --- |
 | `daily-log/` | One note per study day: what I built, what broke, what I learned |
 | `cheatsheets/` | Quick references: [applications & modules](cheatsheets/applications-and-modules.md), [scripting](cheatsheets/scripting.md) |
+| `deploy/` | [Deployment order](deploy/README.md) and XML for items update sets don't capture (scheduled job) |
 | `projects/` | Portfolio projects (update sets, scripts, READMEs, demos) |
 | `data/` | Simulated datasets (CSV) |
 
@@ -28,3 +29,4 @@ A 6-week, hands-on ServiceNow + agentic AI learning portfolio, built while prepa
 - [x] [Week 1, Day 5](daily-log/week1-day5.md): import sets & transform maps (coalesce, choice actions, messy data), update set hygiene, Instance Scan
 - [x] [Week 2, Day 1](daily-log/week2-day1.md): GlideRecord & business rules (age, allergy block, ward bed counts, discharge, full-ward block)
 - [x] [Week 2, Day 2](daily-log/week2-day2.md): script includes (PatientUtils, PrescriptionUtils, WardUtils), refactor + regression test, read-only health check
+- [x] [Week 2, Day 3](daily-log/week2-day3.md): GlideAggregate, fix script with dry run (idempotent), nightly reconciliation job, deployment order
