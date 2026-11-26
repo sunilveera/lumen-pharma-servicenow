@@ -12,11 +12,15 @@ Update sets don't carry everything. This is the full order for moving the MediCa
 | 4 | HMS Scripting v1 | Update set | Business rules |
 | 5 | HMS Script Includes v1 | Update set | `PatientUtils`, `PrescriptionUtils`, `WardUtils` |
 | 6 | HMS Data Fixes v1 | Update set | Fix scripts, `reconcileBeds` / `recalculateAllAges`, the GlideAggregate cross-scope privilege |
-| 7 | [Scheduled job: HMS nightly reconciliation](hms-nightly-reconciliation.xml) | **Import XML** (*System Definition → Scheduled Jobs → list context menu → Import XML*) | Not captured by update sets (see below). Import **after** step 6: it belongs to the MediCare HMS scope and calls `WardUtils` and `PatientUtils` |
-| 8 | Groups and users data pack | Import XML | **Not in this repo**: user exports contain password hashes |
-| 9 | Verify | Run the fix script **HMS - Data health check (read-only)** | All sections should be clean |
+| 7 | HMS Bed Integrity v1 | Update set | Field write ACL on Available Beds, *Block delete of admitted patient*, the `GlideRecordSecure.getValue` cross-scope privilege |
+| 8 | HMS Client Scripts v1 | Update set | 6 client scripts, 4 business rules, `WardAjax` / `PrescriptionAjax` with their client-callable ACLs **and Access Roles** (nurse, doctor) |
+| 9 | [Scheduled job: HMS nightly reconciliation](hms-nightly-reconciliation.xml) | **Import XML** (*System Definition → Scheduled Jobs → list context menu → Import XML*) | Not captured by update sets (see below). Import **after** the update sets: it belongs to the MediCare HMS scope and calls `WardUtils` and `PatientUtils` |
+| 10 | Groups and users data pack | Import XML | **Not in this repo**: user exports contain password hashes |
+| 11 | Verify | Run the fix script **HMS - Data health check (read-only)** | All sections should be clean |
 
 Preview every update set before committing it, and commit them in this order.
+
+**Check ACL roles travel with their ACLs.** The role on an ACL is a separate record (Access Roles). If a role is added in a later update set than the ACL, the ACL arrives without it and only admin passes.
 
 ## Why the scheduled job isn't in an update set
 
