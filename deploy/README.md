@@ -14,9 +14,10 @@ Update sets don't carry everything. This is the full order for moving the MediCa
 | 6 | HMS Data Fixes v1 | Update set | Fix scripts, `reconcileBeds` / `recalculateAllAges`, the GlideAggregate cross-scope privilege |
 | 7 | HMS Bed Integrity v1 | Update set | Field write ACL on Available Beds, *Block delete of admitted patient*, the `GlideRecordSecure.getValue` cross-scope privilege |
 | 8 | HMS Client Scripts v1 | Update set | 6 client scripts, 4 business rules, `WardAjax` / `PrescriptionAjax` with their client-callable ACLs **and Access Roles** (nurse, doctor) |
-| 9 | [Scheduled job: HMS nightly reconciliation](hms-nightly-reconciliation.xml) | **Import XML** (*System Definition → Scheduled Jobs → list context menu → Import XML*) | Not captured by update sets (see below). Import **after** the update sets: it belongs to the MediCare HMS scope and calls `WardUtils` and `PatientUtils` |
-| 10 | Groups and users data pack | Import XML | **Not in this repo**: user exports contain password hashes |
-| 11 | Verify | Run the fix script **HMS - Data health check (read-only)** | All sections should be clean |
+| 9 | HMS Logging v1 | Update set | `gs.debug` lines in `WardUtils.adjustBeds`, property `x_1941695_medica_0.logging.verbosity` (**info**) |
+| 10 | [Scheduled job: HMS nightly reconciliation](hms-nightly-reconciliation.xml) | **Import XML** (*System Definition → Scheduled Jobs → list context menu → Import XML*) | Not captured by update sets (see below). Import **after** the update sets: it belongs to the MediCare HMS scope and calls `WardUtils` and `PatientUtils` |
+| 11 | Groups and users data pack | Import XML | **Not in this repo**: user exports contain password hashes |
+| 12 | Verify | Run the fix script **HMS - Data health check (read-only)** | All sections should be clean |
 
 Preview every update set before committing it, and commit them in this order.
 
