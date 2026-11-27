@@ -31,3 +31,4 @@ A 6-week, hands-on ServiceNow + agentic AI learning portfolio, built while prepa
 - [x] [Week 2, Day 2](daily-log/week2-day2.md): script includes (PatientUtils, PrescriptionUtils, WardUtils), refactor + regression test, read-only health check
 - [x] [Week 2, Day 3](daily-log/week2-day3.md): GlideAggregate, fix script with dry run (idempotent), nightly reconciliation job, deployment order
 - [x] [Week 2, Day 4](daily-log/week2-day4.md): client scripts, GlideAjax (WardAjax, PrescriptionAjax), g_scratchpad, field ACL on bed counts, list-edit bypass proven and closed
+- [x] [Week 2, Day 5](daily-log/week2-day5.md): debugging tools (session debug, Script Tracer, Script Debugger, log verbosity), GlideRecord bug hunt
